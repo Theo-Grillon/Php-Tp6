@@ -6,12 +6,13 @@ class Formulaire{
         $this->form.="<form action='$filename' method='post'><br>";
     }
     function addTextZone($text){
-        $this->form.=$text."<input type='text'><br>";
+        $this->form.="<b>".$text."</b><input type='text'><br>";
     }
     function addButton(){
         $this->form.="<input type='submit' value='Envoi'><br>";
     }
     function getForm(){
+        $this->form.="</form>";
         return $this->form;
     }
 }
